@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres para soportar tildes y caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el diseño sea adaptable a dispositivos móviles -->
+    <title>Buscador de Viajes</title>
+</head>
+<body>
+
+    <!-- Imagen de portada centrada -->
+    <center>
+        <img src="https://www.clarin.com/2015/09/16/BygJfYIeVg_1256x620.jpg" alt="Aerolinea portada" width="700" height="auto">
+    </center>
+    
+    <hr>
+    <!-- Título del formulario -->
+    <form align="center"> <!-- 'align' está obsoleto, mejor usar CSS -->
+        <h2>Buscador de Viajes</h2>
+    </form>
+
+    <form align="center"> <!-- Formulario principal -->
+        
+        <!-- Campo para el nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <!-- 'required' obliga al usuario a llenar este campo antes de enviar el formulario -->
+        <br><br>
+
+        <!-- Checkbox para autorizar correos promocionales -->
+        <input type="checkbox" id="autorizar" name="autorizar">
+        <label for="autorizar">Autorizo recibir correos promocionales</label>
+        <br><br>
+
+        <!-- Campo para el correo electrónico -->
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <!-- 'type="email"' obliga a ingresar un correo válido -->
+        <br><br>
+
+        <!-- Lugar de partida -->
+        <label for="origen">Lugar de partida:</label>
+        <input type="text" id="origen" name="origen" required>
+        <br><br>
+
+        <!-- Lugar de destino -->
+        <label for="destino">Lugar de destino:</label>
+        <input type="text" id="destino" name="destino" required>
+        <br><br>
+
+        <!-- Fecha de salida -->
+        <label for="salida">Fecha de salida:</label>
+        <input type="date" id="salida" name="salida" required>
+        <!-- 'type="date"' muestra un selector de fecha -->
+        <br><br>
+
+        <!-- Fecha de regreso (opcional) -->
+        <label for="regreso">Fecha de regreso:</label>
+        <input type="date" id="regreso" name="regreso">
+        <br><br>
+
+        <!-- Tipo de viaje -->
+        <label>Tipo de viaje:</label>
+        <input type="radio" id="solo" name="acompanado" value="solo" checked>
+        <label for="solo">Solo</label>
+        
+        <input type="radio" id="acompanado" name="acompanado" value="acompanado">
+        <label for="acompanado">Acompañado</label>
+        <!-- Se usa 'name="acompanado"' en ambos radios para que solo uno pueda seleccionarse a la vez -->
+        <br><br>
+
+        <!-- Cantidad de pasajeros -->
+        <label for="pasajeros">Cantidad de pasajeros:</label>
+        <input type="number" id="pasajeros" name="pasajeros" min="1" required>
+        <!-- 'min="1"' impide valores negativos o cero -->
+        <br><br>
+
+        <!-- Opciones adicionales -->
+        <label>Opciones adicionales:</label>
+        <input type="checkbox" id="ninos" name="extras" value="ninos">
+        <label for="ninos">Viajo con niños</label>
+
+        <input type="checkbox" id="mascotas" name="extras" value="mascotas">
+        <label for="mascotas">Viajo con mascotas</label>
+        <br><br>
+
+        <!-- Código promocional -->
+        <label for="codigoPromo">Código promocional:</label>
+        <input type="text" id="codigoPromo" name="codigoPromo">
+        <br><br>
+
+        <!-- Botón de envío -->
+        <button type="submit">Buscar</button>
+        <br><br>
+    </form>
+    <hr>
+
+    <!-- Imagen de pie de página centrada -->
+    <center>
+        <img src="https://aviacionaldia.com/wp-content/uploads/2020/05/pista-aterrizaje-1.png" alt="Aerolinea pie de pagina" width="700" height="auto">
+    </center>
+
+</body>
+</html>
